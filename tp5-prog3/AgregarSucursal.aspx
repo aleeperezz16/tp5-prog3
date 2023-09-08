@@ -12,23 +12,20 @@
         }
         .auto-style3{
             width: 190px;
+            height: 27px;
         }
         .auto-style4 {
             width: 73px;
+            height: 27px;
         }
         .auto-style5 {
             width: 159px;
             font-weight: bold;
-        }
-        .auto-style6 {
-            width: 173px;
-            margin: 0px;
-        }
-        .auto-style7 {
-            width: 225px;
+            height: 27px;
         }
         .auto-style8 {
             width: 684px;
+            height: 27px;
         }
         .auto-style9 {
             width: 73px;
@@ -68,6 +65,9 @@
         .auto-style18 {
             height: 26px;
         }
+        .auto-style19 {
+            height: 27px;
+        }
     </style>
 </head>
 <body>
@@ -88,14 +88,18 @@
                     <td class="auto-style18"></td>
                 </tr>
                 <tr>
-                    <td class="auto-style4"><h1 class="auto-style6" >Grupo N°</h1></td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style4">
+                        <asp:Label ID="lblGrupo" runat="server" Font-Bold="True" Font-Size="X-Large" Text="Grupo N°" Width="197px"></asp:Label>
+                    </td>
+                    <td class="auto-style5"></td>
+                    <td class="auto-style3"></td>
+                    <td class="auto-style8"></td>
+                    <td class="auto-style19"></td>
                 </tr>
                 <tr>
-                    <td class="auto-style9"><h2 class="auto-style7" >Agregar sucursal</h2></td>
+                    <td class="auto-style9">
+                        <asp:Label ID="lblAgregarSucursal" runat="server" Font-Bold="True" Font-Size="Large" Text="Agregar Sucursal" Width="197px"></asp:Label>
+                    </td>
                     <td class="auto-style10"></td>
                     <td class="auto-style11"></td>
                     <td class="auto-style12"></td>
