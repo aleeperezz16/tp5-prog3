@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AgregarSucursal.aspx.cs" Inherits="tp5_prog3.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AgregarSucursal.aspx.cs" Inherits="tp5_prog3.AgregarSucursal" %>
 
 <!DOCTYPE html>
 
@@ -10,111 +10,126 @@
         .auto-style1 {
             width: 100%;
         }
-        .auto-style3{
-            width: 216px;
-            height: 27px;
+        .auto-style2 {
+            width: 29px;
         }
-        .auto-style4 {
-            width: 111px;
-            height: 27px;
+        .auto-style3 {
+            width: 214px;
         }
         .auto-style5 {
-            width: 159px;
-            font-weight: bold;
-            height: 27px;
+            width: 29px;
+            height: 60px;
+        }
+        .auto-style6 {
+            width: 214px;
+            height: 60px;
         }
         .auto-style8 {
-            width: 684px;
-            height: 27px;
+            height: 60px;
         }
         .auto-style9 {
-            width: 111px;
-            height: 58px;
+            width: 29px;
+            height: 50px;
         }
         .auto-style10 {
-            width: 159px;
-            height: 58px;
-        }
-        .auto-style11 {
-            width: 216px;
-            height: 58px;
+            width: 214px;
+            height: 50px;
         }
         .auto-style12 {
-            width: 684px;
-            height: 58px;
+            height: 50px;
         }
         .auto-style13 {
-            height: 58px;
+            width: 220px;
         }
         .auto-style14 {
-            width: 111px;
-            height: 26px;
+            width: 220px;
+            height: 60px;
         }
         .auto-style15 {
-            width: 159px;
-            height: 26px;
-        }
-        .auto-style16 {
-            width: 216px;
-            height: 26px;
-        }
-        .auto-style17 {
-            width: 684px;
-            height: 26px;
-        }
-        .auto-style18 {
-            height: 26px;
-        }
-        .auto-style19 {
-            height: 27px;
-        }
-        .auto-style20 {
-            margin-bottom: 0px;
+            width: 220px;
+            height: 50px;
         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="auto-style20">
+        <div>
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style14"></td>
-                    <td class="auto-style15">
-                        <asp:HyperLink ID="hlAgregarSucursal" runat="server" NavigateUrl="~/AgregarSucursal.aspx">Agregar sucursal</asp:HyperLink>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style3" style="text-align: right">
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/AgregarSucursal.aspx">Agregar Sucursal</asp:HyperLink>
                     </td>
-                    <td class="auto-style16">
-                        <asp:HyperLink ID="hlListadoSucursales" runat="server" NavigateUrl="~/ListarSucursal.aspx">Listado de Sucursales</asp:HyperLink>
+                    <td class="auto-style13" style="text-align: center">
+                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/ListarSucursal.aspx">Listado de Sucursales</asp:HyperLink>
                     </td>
-                    <td class="auto-style17">
-                        <asp:HyperLink ID="hlEliminarSucursal" runat="server" NavigateUrl="~/EliminarSucursal.aspx">Eliminar Sucursal</asp:HyperLink>
+                    <td>
+                        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/EliminarSucursal.aspx">Eliminar Sucursal</asp:HyperLink>
                     </td>
-                    <td class="auto-style18"></td>
                 </tr>
                 <tr>
-                    <td class="auto-style4">
-                        <asp:Label ID="lblGrupo" runat="server" Font-Bold="True" Font-Size="X-Large" Text="Grupo N°" Width="197px"></asp:Label>
-                    </td>
                     <td class="auto-style5"></td>
-                    <td class="auto-style3"></td>
+                    <td class="auto-style6">
+                        <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="XX-Large" Text="GRUPO N° 6"></asp:Label>
+                    </td>
+                    <td class="auto-style14"></td>
                     <td class="auto-style8"></td>
-                    <td class="auto-style19"></td>
                 </tr>
                 <tr>
-                    <td class="auto-style9">
-                        <asp:Label ID="lblAgregarSucursal" runat="server" Font-Bold="True" Font-Size="Large" Text="Agregar Sucursal" Width="197px"></asp:Label>
+                    <td class="auto-style9"></td>
+                    <td class="auto-style10">
+                        <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Size="X-Large" Text="Agregar Sucursal"></asp:Label>
                     </td>
-                    <td class="auto-style10"></td>
-                    <td class="auto-style11"></td>
+                    <td class="auto-style15"></td>
                     <td class="auto-style12"></td>
-                    <td class="auto-style13"></td>
                 </tr>
                 <tr>
-                    <td class="auto-style9">
-                        Nombre Sucursal:</td>
-                    <td class="auto-style13" colspan="3">
-                        <asp:TextBox ID="txtNombreSucursal" runat="server"></asp:TextBox>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style3">
+                        <asp:Label ID="Label3" runat="server" Text="Nombre Sucursal:"></asp:Label>
                     </td>
+                    <td class="auto-style13">
+                        <asp:TextBox ID="txtNombreSucursal" runat="server" Width="210px"></asp:TextBox>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style3">
+                        <asp:Label ID="Label4" runat="server" Text="Descripción:"></asp:Label>
+                    </td>
+                    <td class="auto-style13">
+                        <asp:TextBox ID="txtDescripcion" runat="server" Height="35px" Width="210px"></asp:TextBox>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style3">
+                        <asp:Label ID="Label5" runat="server" Text="Provincia:"></asp:Label>
+                    </td>
+                    <td class="auto-style13">
+                        <asp:DropDownList ID="ddlProvincia" runat="server" Width="218px">
+                            <asp:ListItem>--Seleccionar--</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style3">
+                        <asp:Label ID="Label6" runat="server" Text="Dirección:"></asp:Label>
+                    </td>
+                    <td class="auto-style13">
+                        <asp:TextBox ID="txtDireccion" runat="server" Width="210px"></asp:TextBox>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style13">&nbsp;</td>
+                    <td>&nbsp;</td>
                 </tr>
             </table>
         </div>
