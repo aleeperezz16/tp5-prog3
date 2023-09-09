@@ -46,7 +46,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style5">
-                        <asp:Label ID="Label1" runat="server" Text="Busqueda ingrese Id sucursal:"></asp:Label>
+                        <asp:Label ID="lbbusquedaidsucur" runat="server" Text="Busqueda ingrese Id sucursal:"></asp:Label>
                     </td>
                     <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
