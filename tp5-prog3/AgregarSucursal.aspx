@@ -11,11 +11,11 @@
             width: 100%;
         }
         .auto-style3{
-            width: 190px;
+            width: 216px;
             height: 27px;
         }
         .auto-style4 {
-            width: 73px;
+            width: 111px;
             height: 27px;
         }
         .auto-style5 {
@@ -28,7 +28,7 @@
             height: 27px;
         }
         .auto-style9 {
-            width: 73px;
+            width: 111px;
             height: 58px;
         }
         .auto-style10 {
@@ -36,7 +36,7 @@
             height: 58px;
         }
         .auto-style11 {
-            width: 190px;
+            width: 216px;
             height: 58px;
         }
         .auto-style12 {
@@ -47,7 +47,7 @@
             height: 58px;
         }
         .auto-style14 {
-            width: 73px;
+            width: 111px;
             height: 26px;
         }
         .auto-style15 {
@@ -55,7 +55,7 @@
             height: 26px;
         }
         .auto-style16 {
-            width: 190px;
+            width: 216px;
             height: 26px;
         }
         .auto-style17 {
@@ -68,11 +68,14 @@
         .auto-style19 {
             height: 27px;
         }
+        .auto-style20 {
+            margin-bottom: 0px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div class="auto-style20">
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style14"></td>
@@ -104,6 +107,14 @@
                     <td class="auto-style11"></td>
                     <td class="auto-style12"></td>
                     <td class="auto-style13"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style9">
+                        Nombre Sucursal:</td>
+                    <td class="auto-style13" colspan="3">
+                        <asp:TextBox ID="txtNombreSucursal" runat="server"></asp:TextBox>
+                    </td>
+                    <td class="auto-style13">&nbsp;</td>
                 </tr>
             </table>
         </div>

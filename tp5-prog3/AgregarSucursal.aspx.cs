@@ -13,5 +13,10 @@ namespace tp5_prog3
         {
 
         }
+
+        protected System.Void Page_Load(System.Object sender, System.EventArgs e)
+        {
+
+        }
     }
 }
