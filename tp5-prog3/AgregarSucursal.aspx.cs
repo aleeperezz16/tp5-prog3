@@ -11,7 +11,7 @@ namespace tp5_prog3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
         }
     }
 }
