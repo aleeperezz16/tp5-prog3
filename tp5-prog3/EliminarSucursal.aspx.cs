@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace tp5_prog3
 {
-    public partial class AgregarSucursal : System.Web.UI.Page
+    public partial class EliminarSucursal : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
