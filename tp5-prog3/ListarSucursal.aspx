@@ -10,11 +10,15 @@
         .auto-style1 {
             width: 100%;
         }
-        .auto-style2 {
-            width: 150px;
-        }
         .auto-style3 {
             width: 230px;
+        }
+        .auto-style4 {
+            width: 310px;
+            text-align: center;
+        }
+        .auto-style5 {
+            width: 310px;
         }
     </style>
 </head>
@@ -23,7 +27,7 @@
         <div>
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style2" style="text-align: right">
+                    <td class="auto-style4">
                         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/AgregarSucursal.aspx">Agregar Sucursal</asp:HyperLink>
                     </td>
                     <td class="auto-style3" style="text-align: center">
@@ -34,12 +38,16 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style4">
+                        <asp:Label ID="lbListadodesucursales" runat="server" Font-Bold="True" Font-Size="Larger" Text="Listado de Sucursales"></asp:Label>
+                    </td>
                     <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style5">
+                        <asp:Label ID="Label1" runat="server" Text="Busqueda ingrese Id sucursal:"></asp:Label>
+                    </td>
                     <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
