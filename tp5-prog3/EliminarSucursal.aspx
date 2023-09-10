@@ -21,10 +21,11 @@
             width: 172px;
         }
         .auto-style5 {
-            width: 194px;
+            width: 179px;
+            text-align: center;
         }
         .auto-style6 {
-            width: 194px;
+            width: 179px;
             height: 48px;
         }
         .auto-style7 {
@@ -40,7 +41,10 @@
         }
         .auto-style10 {
             height: 26px;
-            width: 194px;
+            width: 179px;
+        }
+        .auto-style11 {
+            text-align: center;
         }
     </style>
 </head>
@@ -54,7 +58,7 @@
                 <td class="auto-style5">
                     <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/ListarSucursal.aspx">Listado de Sucursales</asp:HyperLink>
                 </td>
-                <td>
+                <td class="auto-style11">
                     <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/EliminarSucursal.aspx">Eliminar Sucursal</asp:HyperLink>
                 </td>
             </tr>
@@ -65,7 +69,9 @@
             </tr>
             <tr>
                 <td class="auto-style9">Ingresar ID sucursal:</td>
-                <td class="auto-style10"></td>
+                <td class="auto-style10">
+                    <asp:TextBox ID="tbIngresaridsuc" runat="server" Width="292px"></asp:TextBox>
+                </td>
                 <td class="auto-style8"></td>
             </tr>
         </table>
