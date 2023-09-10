@@ -11,22 +11,14 @@
             width: 100%;
         }
         .auto-style3 {
-            width: 230px;
+            width: 337px;
         }
         .auto-style4 {
             width: 243px;
             text-align: center;
         }
-        .auto-style6 {
-            width: 243px;
-            text-align: center;
-            height: 23px;
-        }
         .auto-style7 {
-            width: 230px;
-            height: 23px;
-        }
-        .auto-style8 {
+            width: 337px;
             height: 23px;
         }
         .auto-style9 {
@@ -34,6 +26,13 @@
         }
         .auto-style10 {
             width: 243px;
+            height: 23px;
+        }
+        .auto-style11 {
+            width: 69px;
+        }
+        .auto-style12 {
+            width: 69px;
             height: 23px;
         }
     </style>
@@ -54,7 +53,8 @@
                         <asp:Label ID="lbListadodesucursales" runat="server" Font-Bold="True" Font-Size="Large" Text="Listado de Sucursales"></asp:Label>
                     </td>
                     <td class="auto-style3">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style11">&nbsp;</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td class="auto-style9">
@@ -63,13 +63,19 @@
                     <td class="auto-style3">
                         <asp:TextBox ID="txtIDSucursal" runat="server" Width="200px"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style11">
+                        <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" />
+                    </td>
+                    <td>
+                        <asp:Button ID="btnMostrarTodos" runat="server" Text="Mostrar Todos"  />
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style10">
                     </td>
                     <td class="auto-style7"></td>
-                    <td class="auto-style8"></td>
+                    <td class="auto-style12"></td>
+                    <td></td>
                 </tr>
             </table>
         </div>
