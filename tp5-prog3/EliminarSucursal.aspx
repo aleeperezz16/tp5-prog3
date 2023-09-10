@@ -13,17 +13,18 @@
         }
         .auto-style2 {
             font-size: x-large;
-            width: 187px;
+            width: 172px;
             height: 48px;
+            padding-left:10px;
         }
         .auto-style4 {
-            width: 158px;
+            width: 172px;
         }
         .auto-style5 {
-            width: 182px;
+            width: 194px;
         }
         .auto-style6 {
-            width: 182px;
+            width: 194px;
             height: 48px;
         }
         .auto-style7 {
@@ -32,13 +33,22 @@
         .auto-style8 {
             height: 26px;
         }
+        .auto-style9 {
+            height: 26px;
+            width: 172px;
+            padding-left:10px;
+        }
+        .auto-style10 {
+            height: 26px;
+            width: 194px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <table class="auto-style1">
             <tr>
-                <td class="auto-style4" style="padding-left: 30px">
+                <td class="auto-style4" style="padding-left: 40px">
                     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/AgregarSucursal.aspx">Agregar Sucursal</asp:HyperLink>
                 </td>
                 <td class="auto-style5">
@@ -54,8 +64,8 @@
                 <td class="auto-style7"></td>
             </tr>
             <tr>
-                <td class="auto-style8">Ingresar ID sucursal:</td>
-                <td class="auto-style8"></td>
+                <td class="auto-style9">Ingresar ID sucursal:</td>
+                <td class="auto-style10"></td>
                 <td class="auto-style8"></td>
             </tr>
         </table>
