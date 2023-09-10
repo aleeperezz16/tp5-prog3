@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ListarSucursal.aspx.cs" Inherits="tp5_prog3.ListarSucursal" %>
+﻿<%@ Page Language="C#" UnobtrusiveValidationMode="None" AutoEventWireup="true" CodeBehind="ListarSucursal.aspx.cs" Inherits="tp5_prog3.ListarSucursal" %>
 
 <!DOCTYPE html>
 
