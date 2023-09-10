@@ -14,12 +14,23 @@
         .auto-style2 {
             font-size: x-large;
             width: 187px;
+            height: 48px;
         }
         .auto-style4 {
             width: 158px;
         }
         .auto-style5 {
             width: 182px;
+        }
+        .auto-style6 {
+            width: 182px;
+            height: 48px;
+        }
+        .auto-style7 {
+            height: 48px;
+        }
+        .auto-style8 {
+            height: 26px;
         }
     </style>
 </head>
@@ -39,8 +50,13 @@
             </tr>
             <tr>
                 <td class="auto-style2"><strong>Eliminar Sucursal</strong></td>
-                <td class="auto-style5">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style6"></td>
+                <td class="auto-style7"></td>
+            </tr>
+            <tr>
+                <td class="auto-style8">Ingresar ID sucursal:</td>
+                <td class="auto-style8"></td>
+                <td class="auto-style8"></td>
             </tr>
         </table>
     </form>
