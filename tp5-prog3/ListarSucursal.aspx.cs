@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
 
 namespace tp5_prog3
 {
@@ -11,6 +12,12 @@ namespace tp5_prog3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            if (!IsPostBack)
+            {
+                string RutaSQL = " Data Source = localhost\\sqlexpress; Initial Catalog = BDSucursales; Integrated Security = True";
+
+            }
 
         }
     }
