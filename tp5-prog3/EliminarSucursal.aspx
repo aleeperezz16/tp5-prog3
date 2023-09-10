@@ -44,7 +44,10 @@
             width: 179px;
         }
         .auto-style11 {
-            text-align: center;
+            text-align: left;
+        }
+        .auto-style12{
+            margin: 1rem;
         }
     </style>
 </head>
@@ -72,7 +75,9 @@
                 <td class="auto-style10">
                     <asp:TextBox ID="tbIngresaridsuc" runat="server" Width="292px"></asp:TextBox>
                 </td>
-                <td class="auto-style8"></td>
+                <td class="auto-style8">
+                    <asp:Button class="auto-style12" ID="btnEliminar" runat="server" Text="Eliminar" />
+                </td>
             </tr>
         </table>
     </form>
