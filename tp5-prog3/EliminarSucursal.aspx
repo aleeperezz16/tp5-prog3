@@ -9,42 +9,40 @@
     <style type="text/css">
         .auto-style1 {
             width: 100%;
-            height: 122px;
+            height: 80px;
         }
         .auto-style2 {
-            width: 237px;
+            font-size: x-large;
+            width: 187px;
         }
-        .auto-style3 {
-            margin-left: 80px;
+        .auto-style4 {
+            width: 158px;
+        }
+        .auto-style5 {
+            width: 182px;
         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <table class="auto-style1">
-                <tr>
-                    <td class="auto-style3" colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:LinkButton ID="lbtnAgregarSucursal" runat="server">Agregar Sucursal</asp:LinkButton>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style2"> <font size ="5"> <b>Eliminar Sucursal<b/> </font> </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-            </table>
-        </div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style4" style="padding-left: 30px">
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/AgregarSucursal.aspx">Agregar Sucursal</asp:HyperLink>
+                </td>
+                <td class="auto-style5">
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/ListarSucursal.aspx">Listado de Sucursales</asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/EliminarSucursal.aspx">Eliminar Sucursal</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2"><strong>Eliminar Sucursal</strong></td>
+                <td class="auto-style5">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
     </form>
 </body>
 </html>
