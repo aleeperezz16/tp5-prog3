@@ -23,6 +23,7 @@
         }
         .auto-style9 {
             width: 243px;
+            height: 34px;
         }
         .auto-style10 {
             width: 243px;
@@ -34,6 +35,17 @@
         .auto-style12 {
             width: 69px;
             height: 23px;
+        }
+        .auto-style13 {
+            width: 337px;
+            height: 34px;
+        }
+        .auto-style14 {
+            width: 69px;
+            height: 34px;
+        }
+        .auto-style15 {
+            height: 34px;
         }
     </style>
 </head>
@@ -60,13 +72,14 @@
                     <td class="auto-style9">
                         <asp:Label ID="lbbusquedaidsucur" runat="server" Text="Busqueda ingrese Id sucursal:"></asp:Label>
                     </td>
-                    <td class="auto-style3">
+                    <td class="auto-style13">
                         <asp:TextBox ID="txtIDSucursal" runat="server" Width="200px"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rfvID" runat="server" ControlToValidate="txtIDSucursal">Ingrese un ID</asp:RequiredFieldValidator>
                     </td>
-                    <td class="auto-style11">
+                    <td class="auto-style14">
                         <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" />
                     </td>
-                    <td>
+                    <td class="auto-style15">
                         <asp:Button ID="btnMostrarTodos" runat="server" Text="Mostrar Todos"  />
                     </td>
                 </tr>
