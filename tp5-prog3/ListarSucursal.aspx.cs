@@ -25,7 +25,15 @@ namespace tp5_prog3
 
         protected void btnFiltrar_Click(object sender, EventArgs e)
         {
-            
+            Filtrar();
+        }
+        protected void Filtrar()
+        {
+            Conexion conexion = new Conexion("BDSucursales");
+            string idIngresado = txtIDSucursal.Text;
+            string consulta = "SELECT Id_Sucursal AS ID, NombreSucursal AS NOMBRE, DescripcionSucursal AS DESCRIPCION, DescripcionProvincia AS PROVINCIA, DireccionSucursal AS DIRECCIÓN FROM Sucursal INNER JOIN Provincia ON Id_Provincia=Id_ProvinciaSucursal where Id_Sucursal= " + idIngresado;
+            gridSucursales.DataSource = conexion.ObtenerTablas(consulta, "Sucursales");
+            gridSucursales.DataBind();
         }
     }
 }
