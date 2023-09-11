@@ -83,7 +83,7 @@
                         <asp:RequiredFieldValidator ID="rfvID" runat="server" ControlToValidate="txtIDSucursal" ValidationGroup="filtro">Ingrese un ID</asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style14">
-                        <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" ValidationGroup="filtro" />
+                        <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" ValidationGroup="filtro" OnClick="btnFiltrar_Click" />
                     </td>
                     <td class="auto-style15">
                         <asp:Button ID="btnMostrarTodos" runat="server" Text="Mostrar Todos"  />
@@ -92,7 +92,9 @@
                 <tr>
                     <td class="auto-style10">
                     </td>
-                    <td class="auto-style7"></td>
+                    <td class="auto-style7">
+                        <asp:CompareValidator ID="cmpvID" runat="server" ControlToValidate="txtIDSucursal" ErrorMessage="El ID debe ser un numero" Operator="DataTypeCheck" Type="Integer" ValidationGroup="filtro"></asp:CompareValidator>
+                    </td>
                     <td class="auto-style12"></td>
                     <td></td>
                 </tr>
