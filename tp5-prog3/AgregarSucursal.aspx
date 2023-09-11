@@ -128,7 +128,7 @@
                         <asp:TextBox ID="txtDireccion" runat="server" Width="210px"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:RequiredFieldValidator ID="rfvdescripcion0" runat="server" ControlToValidate="txtDireccion" ErrorMessage="Ingrese una Descripcion"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfvDireccion" runat="server" ControlToValidate="txtDireccion" ErrorMessage="Ingrese una Direccion"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>

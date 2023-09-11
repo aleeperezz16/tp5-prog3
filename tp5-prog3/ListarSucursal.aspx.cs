@@ -4,7 +4,6 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Data.SqlClient;
 
 namespace tp5_prog3
 {
@@ -15,8 +14,11 @@ namespace tp5_prog3
 
             if (!IsPostBack)
             {
-                string RutaSQL = " Data Source = localhost\\sqlexpress; Initial Catalog = BDSucursales; Integrated Security = True";
-
+                Conexion sucursales = new Conexion("BDSucursales");
+                string consulta = "SELECT Id_Sucursal AS ID, NombreSucursal AS NOMBRE, DescripcionSucursal AS DESCRIPCION, DescripcionProvincia AS PROVINCIA, DireccionSucursal AS DIRECCIÓN FROM Sucursal INNER JOIN Provincia ON Id_Provincia=Id_ProvinciaSucursal";
+                string nombreTabla = "Sucursal";
+                gridSucursales.DataSource = sucursales.ObtenerTablas(consulta,nombreTabla);
+                gridSucursales.DataBind();
             }
 
         }
