@@ -69,12 +69,12 @@ namespace tp5_prog3
         protected global::System.Web.UI.WebControls.Button btnEliminar;
 
         /// <summary>
-        /// rfvID control.
+        /// cvSucursalID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvID;
+        protected global::System.Web.UI.WebControls.CustomValidator cvSucursalID;
     }
 }

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EliminarSucursal.aspx.cs" Inherits="tp5_prog3.EliminarSucursal" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" UnobtrusiveValidationMode="None" CodeBehind="EliminarSucursal.aspx.cs" Inherits="tp5_prog3.EliminarSucursal" %>
 
 <!DOCTYPE html>
 
@@ -49,6 +49,18 @@
         .auto-style12{
             margin: 1rem;
         }
+        .auto-style13 {
+            height: 25px;
+            width: 172px;
+            padding-left: 10px;
+        }
+        .auto-style14 {
+            height: 25px;
+            width: 179px;
+        }
+        .auto-style15 {
+            height: 25px;
+        }
     </style>
 </head>
 <body>
@@ -80,12 +92,12 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style9">&nbsp;</td>
-                <td class="auto-style10">
-                    <asp:RequiredFieldValidator ID="rfvID" runat="server" ControlToValidate="tbIngresaridsuc" ErrorMessage="Ingrese una ID"></asp:RequiredFieldValidator>
+                <td class="auto-style13"></td>
+                <td class="auto-style14">
+                    <asp:CustomValidator ID="cvSucursalID" runat="server" ControlToValidate="tbIngresaridsuc" OnServerValidate="cvSucursalID_ServerValidate" ValidateEmptyText="True"></asp:CustomValidator>
                 </td>
-                <td class="auto-style8">
-                    &nbsp;</td>
+                <td class="auto-style15">
+                    </td>
             </tr>
         </table>
     </form>
