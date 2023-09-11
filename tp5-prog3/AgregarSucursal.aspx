@@ -89,7 +89,7 @@
                         <asp:Label ID="Label3" runat="server" Text="Nombre Sucursal:"></asp:Label>
                     </td>
                     <td class="auto-style13">
-                        <asp:TextBox ID="txtNombreSucursal" runat="server" Width="210px"></asp:TextBox>
+                        <asp:TextBox ID="txtNombreSucursal" runat="server" Width="210px" ValidationGroup="1"></asp:TextBox>
                     </td>
                     <td>
                         <asp:RequiredFieldValidator ID="rfvNombreSucursal" runat="server" ControlToValidate="txtNombreSucursal">Ingrese un nombre de sucursal</asp:RequiredFieldValidator>
@@ -101,7 +101,7 @@
                         <asp:Label ID="Label4" runat="server" Text="Descripción:"></asp:Label>
                     </td>
                     <td class="auto-style13">
-                        <asp:TextBox ID="txtDescripcion" runat="server" Height="35px" Width="210px"></asp:TextBox>
+                        <asp:TextBox ID="txtDescripcion" runat="server" Height="35px" Width="210px" ValidationGroup="1"></asp:TextBox>
                     </td>
                     <td>
                         <asp:RequiredFieldValidator ID="rfvdescripcion" runat="server" ControlToValidate="txtDescripcion" ErrorMessage="Ingrese una Descripcion"></asp:RequiredFieldValidator>
@@ -113,7 +113,7 @@
                         <asp:Label ID="Label5" runat="server" Text="Provincia:"></asp:Label>
                     </td>
                     <td class="auto-style13">
-                        <asp:DropDownList ID="ddlProvincia" runat="server" Width="218px" AppendDataBoundItems="True" OnSelectedIndexChanged="ddlProvincia_SelectedIndexChanged">
+                        <asp:DropDownList ID="ddlProvincia" runat="server" Width="218px" AppendDataBoundItems="True" OnSelectedIndexChanged="ddlProvincia_SelectedIndexChanged" ValidationGroup="1">
                             <asp:ListItem>--Seleccionar--</asp:ListItem>
                         </asp:DropDownList>
                     </td>
@@ -125,7 +125,7 @@
                         <asp:Label ID="Label6" runat="server" Text="Dirección:"></asp:Label>
                     </td>
                     <td class="auto-style13">
-                        <asp:TextBox ID="txtDireccion" runat="server" Width="210px"></asp:TextBox>
+                        <asp:TextBox ID="txtDireccion" runat="server" Width="210px" ValidationGroup="1"></asp:TextBox>
                     </td>
                     <td>
                         <asp:RequiredFieldValidator ID="rfvDireccion" runat="server" ControlToValidate="txtDireccion" ErrorMessage="Ingrese una Direccion"></asp:RequiredFieldValidator>
@@ -142,7 +142,7 @@
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style13">
-                        <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" />
+                        <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" OnClick="btnAceptar_Click" ValidationGroup="1" />
                     </td>
                     <td>&nbsp;</td>
                 </tr>

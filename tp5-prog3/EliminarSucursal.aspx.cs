@@ -34,7 +34,7 @@ namespace tp5_prog3
                 cvSucursalID.Text = "Ingrese un ID";
                 return;
             }
-            try
+            /*try
             {
                 int.Parse(tbIngresaridsuc.Text);
             }
@@ -43,7 +43,7 @@ namespace tp5_prog3
                 args.IsValid = false;
                 cvSucursalID.Text = "Ingrese un ID valido";
                 return;
-            }
+            }*/
         }
     }
 }

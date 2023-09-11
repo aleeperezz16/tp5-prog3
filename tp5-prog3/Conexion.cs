@@ -13,7 +13,9 @@ namespace tp5_prog3
         private SqlConnection conexion;
 
         public Conexion(string baseDeDatos)
-        {
+        {   
+            ///RUTAdavid
+            ///ruta = "Data Source = DESKTOP - CIET1TI\\SQLEXPRESS01; Initial Catalog ="+ baseDeDatos +"; Integrated Security = True";
             ruta = " Data Source = localhost\\sqlexpress; Initial Catalog = " + baseDeDatos + "; Integrated Security = True";
             conexion = new SqlConnection(ruta);
         }
