@@ -113,7 +113,7 @@
                         <asp:Label ID="Label5" runat="server" Text="Provincia:"></asp:Label>
                     </td>
                     <td class="auto-style13">
-                        <asp:DropDownList ID="ddlProvincia" runat="server" Width="218px">
+                        <asp:DropDownList ID="ddlProvincia" runat="server" Width="218px" AppendDataBoundItems="True" OnSelectedIndexChanged="ddlProvincia_SelectedIndexChanged">
                             <asp:ListItem>--Seleccionar--</asp:ListItem>
                         </asp:DropDownList>
                     </td>
