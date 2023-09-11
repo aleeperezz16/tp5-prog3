@@ -79,6 +79,14 @@
                     <asp:Button class="auto-style12" ID="btnEliminar" runat="server" Text="Eliminar" />
                 </td>
             </tr>
+            <tr>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style10">
+                    <asp:RequiredFieldValidator ID="rfvID" runat="server" ControlToValidate="tbIngresaridsuc" ErrorMessage="Ingrese una ID"></asp:RequiredFieldValidator>
+                </td>
+                <td class="auto-style8">
+                    &nbsp;</td>
+            </tr>
         </table>
     </form>
 </body>
