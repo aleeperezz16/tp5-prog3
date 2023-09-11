@@ -76,7 +76,7 @@
                     <asp:TextBox ID="tbIngresaridsuc" runat="server" Width="292px"></asp:TextBox>
                 </td>
                 <td class="auto-style8">
-                    <asp:Button class="auto-style12" ID="btnEliminar" runat="server" Text="Eliminar" />
+                    <asp:Button class="auto-style12" ID="btnEliminar" runat="server" Text="Eliminar" OnClick="btnEliminar_Click" />
                 </td>
             </tr>
             <tr>

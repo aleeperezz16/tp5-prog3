@@ -13,5 +13,12 @@ namespace tp5_prog3
         {
 
         }
+
+        protected void btnEliminar_Click(object sender, EventArgs e)
+        {
+            Conexion sucursales = new Conexion("BDSucursal");
+            int filasAfectadas = sucursales.ejecutarConsulta("DELETE FROM Sucursal WHERE Id_Sucursal = " + tbIngresaridsuc);
+
+        }
     }
 }
