@@ -20,7 +20,8 @@ namespace tp5_prog3
         {
             if (cvSucursalID.IsValid)
             {
-
+                String consulta = "delete from Sucursal where Id_Sucursal=" + tbIngresaridsuc.Text.Trim();
+                int escribio=sucursales.ejecutarConsulta(consulta);
             }
             
 
@@ -34,7 +35,7 @@ namespace tp5_prog3
                 cvSucursalID.Text = "Ingrese un ID";
                 return;
             }
-            /*try
+            try
             {
                 int.Parse(tbIngresaridsuc.Text);
             }
@@ -43,7 +44,7 @@ namespace tp5_prog3
                 args.IsValid = false;
                 cvSucursalID.Text = "Ingrese un ID valido";
                 return;
-            }*/
+            }
         }
     }
 }

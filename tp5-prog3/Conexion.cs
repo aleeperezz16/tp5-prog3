@@ -13,8 +13,8 @@ namespace tp5_prog3
         private SqlConnection conexion;
 
         public Conexion(string baseDeDatos)
-            ///RUTAdavid
-            ///ruta = "Data Source = DESKTOP - CIET1TI\\SQLEXPRESS01; Initial Catalog ="+ baseDeDatos +"; Integrated Security = True";
+        {  ///RUTAdavid
+           ///ruta = "Data Source = DESKTOP - CIET1TI\\SQLEXPRESS01; Initial Catalog ="+ baseDeDatos +"; Integrated Security = True";
             ruta = "Data Source = localhost\\sqlexpress; Initial Catalog = " + baseDeDatos + "; Integrated Security = True";
             conexion = new SqlConnection(ruta);
         }
@@ -22,11 +22,11 @@ namespace tp5_prog3
         public DataTable ObtenerTablas(string consultaSQL, string nombreTabla)
         {
             AbrirConexion();
-            
+
             SqlDataAdapter adapter = new SqlDataAdapter(consultaSQL, conexion);
             DataSet ds = new DataSet();
             adapter.Fill(ds, nombreTabla);
-    
+
             CerrarConexion();
             return ds.Tables[nombreTabla];
         }
@@ -34,7 +34,7 @@ namespace tp5_prog3
         public int ejecutarConsulta(string consulta)
         {
             AbrirConexion();
-            
+
             SqlCommand comando = new SqlCommand(consulta, conexion);
             int filasAfectadas = comando.ExecuteNonQuery();
 
@@ -43,7 +43,7 @@ namespace tp5_prog3
         }
 
         private void AbrirConexion()
-        {         
+        {
             conexion.Open();
         }
 
@@ -51,5 +51,6 @@ namespace tp5_prog3
         {
             conexion.Close();
         }
+
     }
 }
