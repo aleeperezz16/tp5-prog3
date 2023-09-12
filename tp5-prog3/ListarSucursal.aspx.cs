@@ -36,6 +36,7 @@ namespace tp5_prog3
 
             gridSucursales.DataSource = dv;
             gridSucursales.DataBind();
+            txtIDSucursal.Text = "";
         }
 
         protected void btnMostrarTodos_Click(object sender, EventArgs e)

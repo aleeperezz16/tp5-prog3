@@ -29,10 +29,10 @@ namespace tp5_prog3
                 }
                 else
                 {
-
+                    lblResultado.Text = "La sucursal se ha eliminado con éxito";
                 }
             }
-            
+            tbIngresaridsuc.Text = "";
 
         }
 
