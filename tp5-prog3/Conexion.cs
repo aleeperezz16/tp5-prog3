@@ -14,15 +14,14 @@ namespace tp5_prog3
 
         public Conexion(string baseDeDatos)
         {
-            ruta = " Data Source = localhost\\sqlexpress; Initial Catalog = " + baseDeDatos + "; Integrated Security = True";
+            ruta = "Data Source = localhost\\sqlexpress; Initial Catalog = " + baseDeDatos + "; Integrated Security = True";
             conexion = new SqlConnection(ruta);
         }
 
         public DataTable ObtenerTablas(string consultaSQL, string nombreTabla)
         {
-           
             AbrirConexion();
-
+            
             SqlDataAdapter adapter = new SqlDataAdapter(consultaSQL, conexion);
             DataSet ds = new DataSet();
             adapter.Fill(ds, nombreTabla);
@@ -33,12 +32,9 @@ namespace tp5_prog3
 
         public int ejecutarConsulta(string consulta)
         {
-          
             AbrirConexion();
-
-            SqlCommand comando = new SqlCommand(consulta, conexion);
             
-
+            SqlCommand comando = new SqlCommand(consulta, conexion);
             int filasAfectadas = comando.ExecuteNonQuery();
 
             CerrarConexion();

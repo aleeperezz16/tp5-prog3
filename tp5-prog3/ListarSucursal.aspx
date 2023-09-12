@@ -86,7 +86,7 @@
                         <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" ValidationGroup="filtro" OnClick="btnFiltrar_Click" />
                     </td>
                     <td class="auto-style15">
-                        <asp:Button ID="btnMostrarTodos" runat="server" Text="Mostrar Todos"  />
+                        <asp:Button ID="btnMostrarTodos" runat="server" Text="Mostrar Todos" OnClick="btnMostrarTodos_Click"  />
                     </td>
                 </tr>
                 <tr>

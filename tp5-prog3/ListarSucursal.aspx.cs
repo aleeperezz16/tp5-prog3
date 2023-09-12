@@ -4,36 +4,43 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
 
 namespace tp5_prog3
 {
     public partial class ListarSucursal : System.Web.UI.Page
     {
+        private static DataTable tabla;
         protected void Page_Load(object sender, EventArgs e)
         {
 
             if (!IsPostBack)
             {
                 Conexion sucursales = new Conexion("BDSucursales");
-                string consulta = "SELECT Id_Sucursal AS ID, NombreSucursal AS NOMBRE, DescripcionSucursal AS DESCRIPCION, DescripcionProvincia AS PROVINCIA, DireccionSucursal AS DIRECCIÓN FROM Sucursal INNER JOIN Provincia ON Id_Provincia=Id_ProvinciaSucursal";
-                string nombreTabla = "Sucursal";
-                gridSucursales.DataSource = sucursales.ObtenerTablas(consulta,nombreTabla);
-                gridSucursales.DataBind();
+                tabla = sucursales.ObtenerTablas("SELECT Id_Sucursal, NombreSucursal AS Nombre, DescripcionSucursal AS Descripcion, DescripcionProvincia AS Provincia, DireccionSucursal AS Direccion FROM Sucursal INNER JOIN Provincia ON Id_Provincia = Id_ProvinciaSucursal", "Sucursales");
+
+                MostrarTablaCompleta();
             }
 
+        }
+        private void MostrarTablaCompleta()
+        {
+            gridSucursales.DataSource = tabla;
+            gridSucursales.DataBind();
         }
 
         protected void btnFiltrar_Click(object sender, EventArgs e)
         {
-            Filtrar();
-        }
-        protected void Filtrar()
-        {
-            Conexion conexion = new Conexion("BDSucursales");
-            string idIngresado = txtIDSucursal.Text;
-            string consulta = "SELECT Id_Sucursal AS ID, NombreSucursal AS NOMBRE, DescripcionSucursal AS DESCRIPCION, DescripcionProvincia AS PROVINCIA, DireccionSucursal AS DIRECCIÓN FROM Sucursal INNER JOIN Provincia ON Id_Provincia=Id_ProvinciaSucursal where Id_Sucursal= " + idIngresado;
-            gridSucursales.DataSource = conexion.ObtenerTablas(consulta, "Sucursales");
+            DataView dv = tabla.AsDataView();
+            dv.RowFilter = "Id_Sucursal = " + txtIDSucursal.Text;
+
+            gridSucursales.DataSource = dv;
             gridSucursales.DataBind();
+        }
+
+        protected void btnMostrarTodos_Click(object sender, EventArgs e)
+        {
+            MostrarTablaCompleta();
         }
     }
 }
