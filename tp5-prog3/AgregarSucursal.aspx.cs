@@ -32,5 +32,16 @@ namespace tp5_prog3
         {
 
         }
+
+        protected void btnAceptar_Click(object sender, EventArgs e)
+        {
+            string NombreSucursal = txtNombreSucursal.Text.Trim();
+            string Descripcion = txtDescripcion.Text.Trim();
+            string Provincia = ddlProvincia.SelectedValue;
+            string Direccion = txtDireccion.Text.Trim();
+
+            string consulta = "insert into Sucursales(NombreSucursal,DescripcionSucursal,Id_ProvinciaSucursal,DireccionSucursal) values (" + NombreSucursal + "," + Descripcion + "," + Provincia + "," + Direccion + ")";
+              
+        }
     }
 }
