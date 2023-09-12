@@ -31,7 +31,7 @@ namespace tp5_prog3
             return ds.Tables[nombreTabla];
         }
 
-        public int ejecutarConsulta(string consulta)
+        public int EjecutarConsulta(string consulta)
         {
             AbrirConexion();
 

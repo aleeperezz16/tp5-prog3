@@ -28,11 +28,6 @@ namespace tp5_prog3
 
         }
 
-        protected void ddlProvincia_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
             string NombreSucursal = txtNombreSucursal.Text.Trim();
@@ -40,8 +35,20 @@ namespace tp5_prog3
             string Provincia = ddlProvincia.SelectedValue;
             string Direccion = txtDireccion.Text.Trim();
 
-            string consulta = "insert into Sucursales(NombreSucursal,DescripcionSucursal,Id_ProvinciaSucursal,DireccionSucursal) values (" + NombreSucursal + "," + Descripcion + "," + Provincia + "," + Direccion + ")";
-              
+            string consulta = "insert into Sucursal (NombreSucursal,DescripcionSucursal,Id_ProvinciaSucursal,DireccionSucursal) values ('" + NombreSucursal + "','" + Descripcion + "'," + Provincia + ",'" + Direccion + "')";
+            Conexion conexion = new Conexion("BDSucursales");
+
+            int ejecutado = conexion.EjecutarConsulta(consulta);
+
+            if (ejecutado > 0)
+            {
+                lblResultado.Text = "La sucursal se ha agregado con éxito";
+
+                txtNombreSucursal.Text = "";
+                txtDescripcion.Text = "";
+                ddlProvincia.SelectedIndex = 0;
+                txtDireccion.Text = "";
+            }
         }
     }
 }

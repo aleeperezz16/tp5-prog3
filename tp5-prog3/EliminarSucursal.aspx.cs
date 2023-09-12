@@ -20,8 +20,8 @@ namespace tp5_prog3
             if (cvSucursalID.IsValid)
             {
                 Conexion sucursales = new Conexion("BDSucursales");
-                String consulta = "delete from Sucursal where Id_Sucursal=" + tbIngresaridsuc.Text.Trim();
-                int escribio=sucursales.ejecutarConsulta(consulta);
+                string consulta = "delete from Sucursal where Id_Sucursal=" + tbIngresaridsuc.Text.Trim();
+                int escribio=sucursales.EjecutarConsulta(consulta);
 
                 if (escribio == 0)
                 {
