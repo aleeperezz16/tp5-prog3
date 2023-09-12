@@ -92,7 +92,9 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style13"></td>
+                <td class="auto-style13">
+                    <asp:Label ID="lblResultado" runat="server" ForeColor="Red"></asp:Label>
+                </td>
                 <td class="auto-style14">
                     <asp:CustomValidator ID="cvSucursalID" runat="server" ControlToValidate="tbIngresaridsuc" OnServerValidate="cvSucursalID_ServerValidate" ValidateEmptyText="True"></asp:CustomValidator>
                 </td>

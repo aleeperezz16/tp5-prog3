@@ -10,7 +10,6 @@ namespace tp5_prog3
 {
     public partial class EliminarSucursal : System.Web.UI.Page
     {
-        Conexion sucursales = new Conexion("BDSucursal");
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -20,8 +19,18 @@ namespace tp5_prog3
         {
             if (cvSucursalID.IsValid)
             {
+                Conexion sucursales = new Conexion("BDSucursales");
                 String consulta = "delete from Sucursal where Id_Sucursal=" + tbIngresaridsuc.Text.Trim();
                 int escribio=sucursales.ejecutarConsulta(consulta);
+
+                if (escribio == 0)
+                {
+                    lblResultado.Text = "El ID ingresado es inexistente";
+                }
+                else
+                {
+
+                }
             }
             
 
@@ -29,12 +38,13 @@ namespace tp5_prog3
 
         protected void cvSucursalID_ServerValidate(object source, ServerValidateEventArgs args)
         {
-            if(tbIngresaridsuc.Text.Trim().Length < 1) 
+            if (tbIngresaridsuc.Text.Trim().Length < 1) 
             { 
                 args.IsValid = false;
                 cvSucursalID.Text = "Ingrese un ID";
                 return;
             }
+
             try
             {
                 int.Parse(tbIngresaridsuc.Text);
@@ -43,7 +53,6 @@ namespace tp5_prog3
             {
                 args.IsValid = false;
                 cvSucursalID.Text = "Ingrese un ID valido";
-                return;
             }
         }
     }
